@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Notifications</h2>
+  <div>
+    <input type="button" value="show noti" @click="showNotification">
+    {{msg}}
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    showNotification: function () {
+      console.log('click')
     }
   }
 }
